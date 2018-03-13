@@ -1,0 +1,19 @@
+<h1>Hello World from hello.html.erb</h1>
+
+<% 1 + 1 %>
+
+<%= 1 + 1 %> </br><br/>
+
+<% name = 'Downie'%>
+
+<%= "Chris #{name}" %> <br/><br/>
+
+<% @array.each do |n| %>
+  <%= n %><br />
+<%end%>
+
+<%= link_to('Index Page', 'index', 'data-no-turbolink' => true) %> </br></br>
+
+ID: <%= @id %> </br>
+Page <%= @page %> </br>
+Next Page: <%= @page.to_i + 1 %></br>

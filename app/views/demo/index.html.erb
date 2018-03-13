@@ -1,0 +1,7 @@
+<h1>Hello World From Index.html.erb</h1>
+
+<%= link_to('Hello Page', 'hello', 'data-no-turbolink' => true) %> </br>
+
+<%= link_to('Hello Page With Parameters', {:action => 'hello', :page => 5, :id => 20, 'data-no-turbolink' => true} ) %> </br>
+
+<%= link_to('Roar', '#', :onClick => "jsRoar('Javascript'); return true;") %>
