@@ -11,4 +11,7 @@ class Subject < ApplicationRecord
 } #%% wildcard matching
 #  scope :search, -> (query) { where("title like ?", "%#{query}%")}
 
+  validates_presence_of :name
+  validates_length_of :name, :maximum => 255
+
 end
